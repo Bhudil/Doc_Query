@@ -2,6 +2,9 @@
 
 A RAG-based (Retrieval Augmented Generation) document question-answering system with FastAPI backend and Streamlit frontend.
 
+## Note:
+Usually API keys are put in environment variable but since it is open source groq llms, I have decided to push the key itself to the docker image so that the application can simply be hit and run without any setup but do note that the api key expires in a few days.
+
 ## Features
 
 - PDF document processing and indexing
