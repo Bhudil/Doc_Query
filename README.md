@@ -57,8 +57,7 @@ A RAG-based (Retrieval Augmented Generation) document question-answering system 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd document-qa-assistant
+git clone Doc_Query
 
 # Start both services
 docker-compose up --build
@@ -99,10 +98,10 @@ Pull pre-built images from Docker Hub:
 
 ```bash
 # Pull backend image
-docker pull <your-dockerhub-username>/qa-backend:latest
+docker pull devopsdemoo/qa-backend:latest
 
 # Pull frontend image
-docker pull <your-dockerhub-username>/qa-frontend:latest
+docker pull devopsdemoo/qa-frontend:latest
 
 # Run with pulled images
 docker-compose -f docker-compose.prod.yml up
@@ -188,21 +187,3 @@ docker build -t qa-backend:latest .
 cd frontend
 docker build -t qa-frontend:latest .
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-MIT License
-
-## Acknowledgments
-
-- LangChain for RAG framework
-- Groq for LLM API
-- FAISS for vector similarity search
